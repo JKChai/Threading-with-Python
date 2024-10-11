@@ -8,7 +8,7 @@ Just wanna to playaround with Threads as Python 3.13 provide ability to make GIL
 
 **I/O BOUND** refers to the time it takes to complete a task, job, process is primarily determined by the speed of I/O subsytem such as reading data from a disk
 
-[Reference 1](https://stackoverflow.com/questions/868568/what-do-the-terms-cpu-bound-and-i-o-bound-mean)
+[Reference StackOverflow](https://stackoverflow.com/questions/868568/what-do-the-terms-cpu-bound-and-i-o-bound-mean)
 
 ## Global Interpreter Lock 
 
@@ -37,7 +37,9 @@ sys._is_gil_enabled()
 ```
 
 [Reference Wiki Python](https://wiki.python.org/moin/GlobalInterpreterLock)
-[Reference PEP 703](ttps://peps.python.org/pep-0703/)
+
+[Reference PEP 703](https://peps.python.org/pep-0703/)
+
 [Reference Python Docs](https://docs.python.org/3/whatsnew/3.13.html)
 
 
