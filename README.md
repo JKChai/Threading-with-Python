@@ -53,7 +53,7 @@ In Python with GIL, GIL will lock a thread and release another thread one at a t
 
 Multi-processing differs in the sense that it is running on different processes for each CPU and will require some overhead to setup the resources including one interpreter for one process which allow the program to run in parallel. 
 
-With the emergence of diabling GIL, Multi-threading and Multi-processing seems to be bluring as Multi-threading used to be Concurrent and Multi-processing is Parallel. The point is that multi-threading with **NO GIL** seems to be running parallel too as it doesn't have to wait for the Acquire and Realease of GIL. The only different that I can see with no GIL is that multi-threading should be faster than multi-processing as it uses shared resources  (i.e., same memory space) within a process reducing the need for setting up new resources.
+With the emergence of diabling GIL, Multi-threading and Multi-processing seems to be bluring as Multi-threading used to be Concurrent and Multi-processing is Parallel. The point is that multi-threading with **NO GIL** seems to be running parallel too as it doesn't have to wait for the Acquire and Realease of GIL. The only different that I can see with no GIL is that multi-threading should be faster than multi-processing as it uses shared resources  (i.e., same memory space) within a process reducing the need for setting up new resources. Without GIL, Python Multi-Threading seems to be Concurrent and Parallel as it can now fire up multiple cores for different tasks. 
 
 [Reference Geek for Geek](https://www.geeksforgeeks.org/difference-between-multithreading-vs-multiprocessing-in-python/)
 
